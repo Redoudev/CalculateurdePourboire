@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url("img/restaurant.jpg");
+  background-position: center center;
+  background-size: cover;
+  font-family: "Roboto", sans-serif;
+}
+/* Contenu principal */
+main {
+  margin: auto;
+  width: 60%;
+  background-color: #ca3333;
+  border-radius: 20px;
+  padding: 15px;
+}
+
+/* H1 */
+header h1 {
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+  margin-top: 25px;
+  margin-bottom: 35px;
+}
+/* Label facture */
+.facture label {
+  color: #fff;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+/* Champs de saisie facture */
+.facture input {
+  width: 250px;
+  padding: 5px;
+  border: 0px solid black;
+  border-radius: 20px;
+  margin-bottom: 25px;
+}
+/* Label pourboire */
+.pourboire label {
+  color: #fff;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+/* Liste des boutons */
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+/* les boutons */
+.choix {
+  margin-left: 15px;
+}
+/* Couleur des bouton quand ils sont séléctionnés */
+.choix button.active {
+  background-color: aqua;
+}
+/* Ligne de séparation entre la partie facturation et résultat */
+hr {
+  margin: 15px auto;
+  border: 2px solid rgb(255, 255, 255);
+  width: 250px;
+}
+/* Section facture */
+#facture-user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* Section résultat */
+#resultat {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  color: #fff;
+  font-weight: bold;
+}
+/* Bouton pour tout effacer */
+div button {
+  background-color: #e0b975;
+  color: #000;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+/* Permet d'enlever les flèches pour les input de type number */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  appearance: none;
+  margin: 0;
+}

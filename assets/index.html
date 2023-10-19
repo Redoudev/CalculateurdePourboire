@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculateur de Pourboire</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <!-- Titre principale -->
+      <h1>Calculateur de Pourboire</h1>
+    </header>
+    <main>
+      <!-- Section facturation et pourboire -->
+      <section id="facture-user">
+        <!-- Facture -->
+        <div class="facture">
+          <label for="facture">Facture</label> <br />
+          <input type="number" id="facture" min="0" placeholder="0€" />
+        </div>
+        <!-- Pourboire -->
+        <div class="pourboire">
+          <label for="choix">Sélectionnez le % de pourboire</label> <br />
+          <ul>
+            <li class="choix"><button value="3" type="button">3%</button></li>
+            <li class="choix"><button value="6" type="button">6%</button></li>
+            <li class="choix"><button value="10" type="button">10%</button></li>
+            <li class="choix"><button value="15" type="button">15%</button></li>
+            <li class="choix"><button value="20" type="button">20%</button></li>
+            <li class="choix"><button value="25" type="button">25%</button></li>
+          </ul>
+        </div>
+      </section>
+      <hr />
+      <!-- Section résultat -->
+      <section id="resultat">
+        <div class="resultat_pourboir">
+          <p id="MontantPB">
+            Montant du pourboir <br />
+            <span id="prix_pourboir">0.00€</span>
+          </p>
+        </div>
+        <div class="resultat_total">
+          <p id="MontantTT">
+            Montant total <br />
+            <span id="prix_total">0.00€</span>
+          </p>
+        </div>
+        <div><button>Réinitialiser</button></div>
+      </section>
+    </main>
+    <!-- Scipt JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
